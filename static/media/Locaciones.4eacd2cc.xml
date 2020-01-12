@@ -1,0 +1,57 @@
+<locations>
+	<location>
+    <tipo>Veterinaria</tipo>
+		<latitud>-2.208736</latitud>
+		<longitud>-79.891306</longitud>
+		<descripcion>Dr. Patas, en donde atienden las 24 horas del día, con un servicio de calidad para nuestras mascotas.</descripcion>
+    <imagen>../Recursos/drpatas.jpg</imagen>
+  </location>
+
+  <location>
+    <tipo>Parque</tipo>
+		<latitud>-2.210315</latitud>
+		<longitud>-79.894601</longitud>
+		<descripcion>Parque forestal, en donde se les permite a sus dueños salir a pasear con sus mascotas a todas horas del día, cuenta con muchos lugares para la recreación de mascotas.</descripcion>
+    <imagen >../Recursos/forestal.jpg</imagen>
+  </location>
+
+  <location>
+    <tipo>Parque</tipo>
+		<latitud>-2.193659</latitud>
+		<longitud>-79.880198</longitud>
+		<descripcion>Malecon 2000, en donde las personas pueden pasar buenos momentos con sus mascotas los fines de semana, en un horario determinao</descripcion>
+    <imagen>../Recursos/malecon.jpg</imagen>
+  </location>
+
+  <location>
+    <tipo>Parque</tipo>
+		<latitud>-2.185083</latitud>
+		<longitud>-79.899372</longitud>
+		<descripcion>Parque lineal del Estero Salado, en donde las personas pueden recorrer este gran parque de punta a punta con sus mascotas.</descripcion>
+    <imagen>../Recursos/lineal.jpg</imagen>
+  </location>
+
+  <location>
+    <tipo>Parque</tipo>
+		<latitud>-2.161251</latitud>
+		<longitud>-79.901963</longitud>
+		<descripcion>Parque lineal Kennedy Norte, en donde los dueños pueden salir a caminar con sus mascotas, ideal para personas que quieran caminar mucho con ellas, debido a su largo.</descripcion>
+    <imagen>../Recursos/linealK.jpg</imagen>
+  </location>
+
+    <location>
+    <tipo>Tienda</tipo>
+		<latitud>-2.168014</latitud>
+		<longitud>-79.905057</longitud>
+		<descripcion>City pet, donde las personas pueden comprar todo tipo de jueguetes, comida, implementos y demás para sus mascotas. Horarios en el día</descripcion>
+    <imagen>../Recursos/citypet.png</imagen>
+  </location>
+
+  <location>
+    <tipo>Parque</tipo>
+		<latitud>-3.269339</latitud>
+		<longitud>-79.962461</longitud>
+		<descripcion>Parque urbano de Machala, donde puedes ir a pasear con tus mascotas en todo momento.</descripcion>
+    <imagen>../Recursos/machala.jpg</imagen>
+  </location>
+</locations>
