@@ -33,7 +33,7 @@ class LocateControl extends Component {
       return resultado.text()
     })
     .then(function(str) {
-      window.alert(str) 
+      /*window.alert(str)*/ 
       var parser = new DOMParser();
       var xml = parser.parseFromString(str, "text/xml");
 
