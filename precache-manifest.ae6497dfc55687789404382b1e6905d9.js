@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "649bcbb92b05a19ef0c3607655c40638",
+    "revision": "fa54ef65d7870859ac2a31245bf300c2",
     "url": "/proyecto-daw/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/proyecto-daw/static/css/2.a65eea5f.chunk.css"
   },
   {
-    "revision": "25e505255e616bf7cd8f",
+    "revision": "9b014203070d7506c651",
     "url": "/proyecto-daw/static/css/main.af731a5c.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/proyecto-daw/static/js/2.3b399244.chunk.js.LICENSE"
   },
   {
-    "revision": "25e505255e616bf7cd8f",
-    "url": "/proyecto-daw/static/js/main.ce095e36.chunk.js"
+    "revision": "9b014203070d7506c651",
+    "url": "/proyecto-daw/static/js/main.7059db30.chunk.js"
   },
   {
     "revision": "a15359b5179eee972d9d",
