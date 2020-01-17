@@ -64,7 +64,8 @@ class LocateControl extends Component {
               });
               L.AwesomeMarkers.Icon.prototype.options.prefix = 'fa';
               m = L.marker([latitud.textContent, longitud.textContent], {icon:EfectoParque}).addTo(map);
-              m.bindPopup('<strong>'+tipo.textContent+'</strong><br/><img src='+imagen.textContent+' width="175" height="125" align="center"><br/><br/><p>'+descripcion.textContent+'</p>', {maxWidth : 175});        
+              m.bindPopup('<strong>'+tipo.textContent+'</strong><br/><img src='+imagen.textContent+
+                ' width="175" height="125" align="center"><br/><br/><p>'+descripcion.textContent+'</p>', {maxWidth : 175});        
               break;
 
             case 'Veterinaria':
@@ -75,7 +76,8 @@ class LocateControl extends Component {
               });
               L.AwesomeMarkers.Icon.prototype.options.prefix = 'fa';
               m = L.marker([latitud.textContent, longitud.textContent], {icon:EfectoVeterinaria}).addTo(map);
-              m.bindPopup('<strong>'+tipo.textContent+'</strong><br/><img src='+imagen.textContent+' width="175" height="125" align="center"><br/><br/><p>'+descripcion.textContent+'</p>', {maxWidth : 175});
+              m.bindPopup('<strong>'+tipo.textContent+'</strong><br/><img src='+imagen.textContent+
+                ' width="175" height="125" align="center"><br/><br/><p>'+descripcion.textContent+'</p>', {maxWidth : 175});
               break;
 
             case 'Tienda':
@@ -86,7 +88,8 @@ class LocateControl extends Component {
               });
               L.AwesomeMarkers.Icon.prototype.options.prefix = 'fa';
               m = L.marker([latitud.textContent, longitud.textContent], {icon:EfectoTienda}).addTo(map);
-              m.bindPopup('<strong>'+tipo.textContent+'</strong><br/><img src='+imagen.textContent+' width="175" height="125" align="center"><br/><br/><p>'+descripcion.textContent+'</p>', {maxWidth : 175});
+              m.bindPopup('<strong>'+tipo.textContent+'</strong><br/><img src='+imagen.textContent+
+                ' width="175" height="125" align="center"><br/><br/><p>'+descripcion.textContent+'</p>', {maxWidth : 175});
               break;
               
               

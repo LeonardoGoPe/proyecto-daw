@@ -33,8 +33,11 @@ const CarouselPage = () => {
           <MDBMask overlay="black-strong" />
           </MDBView>
           <MDBCarouselCaption>
-            <h3 className="h3-responsive">Conoce nuestra aplicación</h3>
+            <h3 className="h3-responsive">¿Te gusta pasar tiempo con tus mascotas?</h3><br/>
+            <h5>¡Obvio que si! A quién no le gusta compartir con sus mascotas. Salir, correr y divertirse con ellos es lo mejor que puedes hacer.</h5>
+
           </MDBCarouselCaption>
+
         </MDBCarouselItem>
         <MDBCarouselItem itemId="2">
           <MDBView>
@@ -46,7 +49,8 @@ const CarouselPage = () => {
           <MDBMask overlay="black-strong" />
           </MDBView>
           <MDBCarouselCaption>
-            <h3 className="h3-responsive">Parques y más</h3>
+            <h3 className="h3-responsive">¡Entonces los parques son para ustedes!</h3><br/>
+            <h5>Sin embargo, ¿sabes de parques donde ir con tus amigos de cuatro patas?</h5>
           </MDBCarouselCaption>
         </MDBCarouselItem>
         <MDBCarouselItem itemId="3">
@@ -59,7 +63,8 @@ const CarouselPage = () => {
           <MDBMask overlay="black-strong" />
           </MDBView>
           <MDBCarouselCaption>
-            <h3 className="h3-responsive">Todo para nuestros amigos de 4 patas</h3>
+            <h3 className="h3-responsive">Pues aquí tenemos su mejor opción</h3><br/>
+            <h5>Aquí encontrarás todo lo relacionado para hacer feliz a tu amigo de cuatro patas, ¡De seguro eso lo hará muy feliz!</h5>
           </MDBCarouselCaption>
         </MDBCarouselItem>
       </MDBCarouselInner>

@@ -12,7 +12,7 @@ import Mapa from "./MapaApp"
 import Noticias from './Noticias'
 import Nosotros from "./Nosotros"
 import Contactenos from './Contactenos'
-
+import Sugerir from "./Sugerir"
 
 
 class Index extends Component {
@@ -39,7 +39,7 @@ toggleCollapse = () => {
               <MDBNavLink to={`/`}>Principal</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to={'/mapa'}>Aplicacion</MDBNavLink>
+              <MDBNavLink to={'/mapa'}>Mapa</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
               <MDBNavLink to={'/noticias'}>Noticias</MDBNavLink>
@@ -70,6 +70,7 @@ toggleCollapse = () => {
         <Route exact path="/noticias" component={Noticias}/>
         <Route exact path="/nosotros" component={Nosotros}/>
         <Route exact path="/contactenos" component={Contactenos}/>
+        <Route exact path="/sugerir" component={Sugerir}/>
        </Switch>
     </Router>
         </div>
