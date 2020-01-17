@@ -3,10 +3,9 @@ import { withLeaflet } from "react-leaflet";
 import L from 'leaflet';
 import datos from '../Data/Locaciones.xml';
 
-
 import 'leaflet.awesome-markers'
 import 'leaflet.awesome-markers/dist/leaflet.awesome-markers.css'
-import Locaciones from "../Data/Locaciones.json";
+//import Locaciones from "../Data/Locaciones.json";
 
 
 
@@ -38,6 +37,7 @@ class LocateControl extends Component {
       var xml = parser.parseFromString(str, "text/xml");
 
       var locations = xml.getElementsByTagName("location");
+      var m;
 
 
       
@@ -50,6 +50,8 @@ class LocateControl extends Component {
           var descripcion = location.getElementsByTagName('descripcion')[0]
           var imagen = location.getElementsByTagName('imagen')[0]
           
+          console.log(imagen);
+          
 
           /* Asignación del tipo de ubicacion al punto en el mapa */
           switch (tipo.textContent) {
@@ -61,8 +63,8 @@ class LocateControl extends Component {
                 spin:false
               });
               L.AwesomeMarkers.Icon.prototype.options.prefix = 'fa';
-              var m = L.marker([latitud.textContent, longitud.textContent], {icon:EfectoParque}).addTo(map);
-              m.bindPopup('<strong>'+tipo.textContent+'</strong><br/><br/><p>'+descripcion.textContent+'</p>', {maxWidth : 175});        
+              m = L.marker([latitud.textContent, longitud.textContent], {icon:EfectoParque}).addTo(map);
+              m.bindPopup('<strong>'+tipo.textContent+'</strong><br/><img src='+imagen.textContent+' width="175" height="125" align="center"><br/><br/><p>'+descripcion.textContent+'</p>', {maxWidth : 175});        
               break;
 
             case 'Veterinaria':
@@ -72,8 +74,8 @@ class LocateControl extends Component {
                 spin:false
               });
               L.AwesomeMarkers.Icon.prototype.options.prefix = 'fa';
-              var m = L.marker([latitud.textContent, longitud.textContent], {icon:EfectoVeterinaria}).addTo(map);
-              m.bindPopup('<strong>'+tipo.textContent+'</strong><br/<br/><p>'+descripcion.textContent+'</p>', {maxWidth : 175});
+              m = L.marker([latitud.textContent, longitud.textContent], {icon:EfectoVeterinaria}).addTo(map);
+              m.bindPopup('<strong>'+tipo.textContent+'</strong><br/><img src='+imagen.textContent+' width="175" height="125" align="center"><br/><br/><p>'+descripcion.textContent+'</p>', {maxWidth : 175});
               break;
 
             case 'Tienda':
@@ -83,8 +85,8 @@ class LocateControl extends Component {
                 spin:false
               });
               L.AwesomeMarkers.Icon.prototype.options.prefix = 'fa';
-              var m = L.marker([latitud.textContent, longitud.textContent], {icon:EfectoTienda}).addTo(map);
-              m.bindPopup('<strong>'+tipo.textContent+'</strong><br/><br/><p>'+descripcion.textContent+'</p>', {maxWidth : 175});
+              m = L.marker([latitud.textContent, longitud.textContent], {icon:EfectoTienda}).addTo(map);
+              m.bindPopup('<strong>'+tipo.textContent+'</strong><br/><img src='+imagen.textContent+' width="175" height="125" align="center"><br/><br/><p>'+descripcion.textContent+'</p>', {maxWidth : 175});
               break;
               
               

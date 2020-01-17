@@ -23,7 +23,7 @@ const styles = {
           <TileLayer url={props.url} />
           <LocateControl startDirectly/>
           <Marker position={props.center}>
-        </Marker>
+          </Marker>
         </Map>
       </div>
     );
