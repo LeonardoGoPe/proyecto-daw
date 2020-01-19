@@ -30,7 +30,8 @@ toggleCollapse = () => {
       <Router>
       <MDBNavbar className=" w-100% l-100%" color="green" light expand="md">
         <MDBNavbarBrand>
-          <strong className="white-text">Navbar</strong>
+
+          <strong className="white-text">Golden Pet Experience</strong>
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
@@ -43,6 +44,9 @@ toggleCollapse = () => {
             </MDBNavItem>
             <MDBNavItem>
               <MDBNavLink to={'/noticias'}>Noticias</MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink to={'/'}>Iniciar Sesion</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
               <MDBDropdown rigth>
