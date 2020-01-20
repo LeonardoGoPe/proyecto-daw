@@ -21,16 +21,6 @@ class Regla (models.Model):
         return self.descripcion
 
 
-class Rol (models.Model):
-
-    descripcion = models.CharField(max_length=100,help_text="Adjunte una breve descripcion del Rol")
-    rol = models.CharField(max_length=20, help_text="Aqui van los Roles")
-
-    def __str__(self):
-        """
-        String que representa al objeto Rol
-        """
-        return self.rol
 
 class Persona(models.Model):
 
@@ -41,7 +31,7 @@ class Persona(models.Model):
     fecha_registro = models.DateField(null=True, blank=True)
     contrasena =  models.CharField(max_length=30 , )
 
-    rolfk = models.ForeignKey(Rol, on_delete=models.SET_NULL, null=True)
+    rol = models.CharField(max_length=20, default="usuario", help_text="Aqui van los Roles")
 
     def __str__(self):
         """
@@ -60,8 +50,9 @@ class Lugar(models.Model):
     latitud = models.IntegerField()
     longitud =  models.IntegerField()
     puntuacion = models.IntegerField()
-
-    regla = models.ManyToManyField(Regla, help_text="Seleccione una regla para este Lugar")
+    """
+    regla = models.ManyToManyField(Regla,null=True, help_text="Seleccione una regla para este Lugar")
+    """
     foto = models.ManyToManyField(Foto, help_text="Seleccione una regla para este Lugar")
 
     def __str__(self):
