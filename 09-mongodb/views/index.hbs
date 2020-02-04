@@ -1,0 +1,77 @@
+<h1>MONGODB - EXERCISE</h1>
+<section class="insert">
+    <h3>Insert Data</h3>
+    <form action="/insert" method="post">
+        
+        <div class="input">
+            <label for="user">Usuario</label>
+            <input type="text" id="user" name="user">
+        </div>
+        <div class="input">
+            <label for="accion">Accion</label>
+            <input type="text" id="accion" name="accion">
+        </div>
+        <div class="input">
+            <label for="detalle">Detalle</label>
+            <input type="text" id="detalle" name="detalle">
+        </div>
+        <div class="input">
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fecha">
+        </div>
+        
+        <button type="submit">INSERT</button>
+    </form>
+</section>
+<section class="get">
+    <h3>Get Data</h3>
+    <a href="/get-data">LOAD DATA</a>
+    <div>
+        {{# each items }}
+            <article class="item">
+                <div>Fecha: {{ this.fecha }}</div>
+                <div>Content: {{ this.accion }}</div>
+                <div>Content: {{ this.detalle }}</div>
+                <div>Usuario: {{ this.user }}</div>
+                <div>ID: {{ this._id }}</div>
+            </article>
+        {{/each}}
+    </div>
+</section>
+<section class="update">
+    <h3>Update Data</h3>
+    <form action="/update" method="post">
+        <div class="input">
+            <label for="id">ID</label>
+            <input type="text" id="id" name="id">
+        </div>
+        <div class="input">
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fecha">
+        </div>
+        <div class="input">
+            <label for="accion">Accion</label>
+            <input type="text" id="accion" name="accion">
+        </div>
+        <div class="input">
+            <label for="detalle">Detalle</label>
+            <input type="text" id="detalle" name="detalle">
+        </div>
+        <div class="input">
+            <label for="user">Usuario</label>
+            <input type="text" id="user" name="user">
+        </div>
+        <button type="submit">UPDATE</button>
+    </form>
+</section>
+</section>
+<section class="delete">
+    <h3>Delete Data</h3>
+    <form action="/delete" method="post">
+        <div class="input">
+            <label for="id">ID</label>
+            <input type="text" id="id" name="id">
+        </div>
+        <button type="submit">DELETE</button>
+    </form>
+</section>
