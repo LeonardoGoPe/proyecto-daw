@@ -12,6 +12,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/get-data', function(req, res, next) {
+  console.log("getdata")
   var resultArray = [];
   mongo.connect(url, function(err, db) {
     assert.equal(null, err);
@@ -21,12 +22,30 @@ router.get('/get-data', function(req, res, next) {
       resultArray.push(doc);
     }, function() {
       db.close();
+      console.log(resultArray)
       res.render('index', {items: resultArray});
+    });
+  });
+});
+router.get('/logs', function(req, res, next) {
+  console.log("getdata")
+  var resultArray = [];
+  mongo.connect(url, function(err, db) {
+    assert.equal(null, err);
+    var cursor = db.collection('log').find();
+    cursor.forEach(function(doc, err) {
+      assert.equal(null, err);
+      resultArray.push(doc);
+    }, function() {
+      db.close();
+      console.log(resultArray)
+      res.json(resultArray);
     });
   });
 });
 
 router.post('/insert', function(req, res, next) {
+  console.log("insert")
   var item = {
     fecha: req.body.fecha,
     accion: req.body.accion,
@@ -47,6 +66,7 @@ router.post('/insert', function(req, res, next) {
 });
 
 router.post('/update', function(req, res, next) {
+  console.log("update")
   var item = {
     fecha: req.body.fecha,
     accion: req.body.accion,
@@ -66,6 +86,7 @@ router.post('/update', function(req, res, next) {
 });
 
 router.post('/delete', function(req, res, next) {
+  console.log("delete")
   var id = req.body.id;
 
   mongo.connect(url, function(err, db) {

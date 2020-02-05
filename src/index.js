@@ -13,7 +13,8 @@ import Noticias from './Noticias'
 import Nosotros from "./Nosotros"
 import Contactenos from './Contactenos'
 import Sugerir from "./Sugerir"
-
+import Prueba from "./Prueba"
+import LogIn from "./LogIn"
 
 class Index extends Component {
 state = {
@@ -46,8 +47,20 @@ toggleCollapse = () => {
               <MDBNavLink to={'/noticias'}>Noticias</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to={'/'}>Iniciar Sesion</MDBNavLink>
+                    <MDBNavLink to={'/prueba'}>Prueba</MDBNavLink>
             </MDBNavItem>
+            <MDBNavItem>
+                    <MDBNavLink to={'/LogIn'}>Iniciar Sesión</MDBNavLink>
+            </MDBNavItem>
+            {
+              false ?
+                <MDBNavItem>
+                    <MDBNavLink to={'/'} >Cerrar Sesión</MDBNavLink>
+                </MDBNavItem>
+                : null
+              
+            }
+            
             <MDBNavItem>
               <MDBDropdown rigth>
                 <MDBDropdownToggle nav caret>
@@ -61,6 +74,7 @@ toggleCollapse = () => {
                   <MDBNavItem>
                     <MDBNavLink to={'/contactenos'}>Contáctenos</MDBNavLink>
                   </MDBNavItem>
+
                   </MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
@@ -70,11 +84,13 @@ toggleCollapse = () => {
       </MDBNavbar>
       <Switch>
         <Route exact path="/" component={Home}/>
+        <Route exact path="/LogIn" component={LogIn}/>
         <Route exact path="/mapa" component={Mapa}/>
         <Route exact path="/noticias" component={Noticias}/>
         <Route exact path="/nosotros" component={Nosotros}/>
         <Route exact path="/contactenos" component={Contactenos}/>
         <Route exact path="/sugerir" component={Sugerir}/>
+        <Route exact path="/prueba" component={Prueba}/>
        </Switch>
     </Router>
         </div>
