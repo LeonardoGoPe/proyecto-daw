@@ -1,0 +1,5 @@
+{"_id":{"$oid":"5e399aae025cd92c9cdfcb16"},"fecha":"2020-02-04","accion":"Log in","user":"matheus","detalle":""}
+{"_id":{"$oid":"5e399acd025cd92c9cdfcb17"},"fecha":"2020-02-03","accion":"Insert","user":"leonardo","detalle":"añadió datos al parque samanes"}
+{"_id":{"$oid":"5e399aed025cd92c9cdfcb18"},"fecha":"2020-01-27","accion":"update","user":"Javier","detalle":"actualizo datos de noticia en samborondon"}
+{"_id":{"$oid":"5e399b09025cd92c9cdfcb19"},"fecha":"2020-02-06","accion":"Ap","user":"Allan","detalle":"aprobo al grupo de daw :\")"}
+{"_id":{"$oid":"5e3a31b5e7ee8124a889b22e"},"fecha":"","accion":"","user":"","detalle":""}
