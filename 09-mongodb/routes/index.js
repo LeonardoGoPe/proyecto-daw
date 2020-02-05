@@ -1,10 +1,25 @@
+//import { error } from "util";
 var express = require('express');
 var router = express.Router();
 var mongo = require('mongodb').MongoClient;
 var objectId = require('mongodb').ObjectID;
 var assert = require('assert');
-
+var logged = false;
 var url = 'mongodb://localhost:27017/Daw';
+const sqlite3 = require("sqlite3").verbose();
+let dbr = new sqlite3.Database("./db.sqlite3", (err)=>{
+  if(err){
+    console.log("error.message")
+  }
+  console.log("conected to db sqlite3")
+  /*db.close((err)=>{
+      if (err) {
+        console.log("error.message")
+      }
+  })
+  console.log("conection closed")
+  */
+});
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -29,6 +44,10 @@ router.get('/get-data', function(req, res, next) {
 });
 router.get('/logs', function(req, res, next) {
   console.log("getdata")
+  dbr.all("select * from MiApp_regla",(err,results)=>{
+    console.log("resultados",results);
+
+  });
   var resultArray = [];
   mongo.connect(url, function(err, db) {
     assert.equal(null, err);
