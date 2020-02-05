@@ -48,6 +48,22 @@ router.get('/logs', function(req, res, next) {
     console.log("resultados",results);
 
   });
+  dbr.all("select * from MiApp_foto",(err,results)=>{
+    console.log("fotos:",results);
+
+  });
+  dbr.all("select * from MiApp_lugar",(err,results)=>{
+    console.log("lugares:",results);
+
+  });
+  dbr.all("select * from MiApp_persona",(err,results)=>{
+    console.log("personas:",results);
+
+  });
+  dbr.all("select * from MiApp_noticias",(err,results)=>{
+    console.log("noticias:",results);
+
+  });
   var resultArray = [];
   mongo.connect(url, function(err, db) {
     assert.equal(null, err);

@@ -47,9 +47,9 @@ class Lugar(models.Model):
     descripcion= models.CharField(max_length=100, help_text="Ingrese su direccion")
     direccion = models.CharField(max_length=100 , help_text="Ingrese su nombre completo")
 
-    latitud = models.IntegerField()
-    longitud =  models.IntegerField()
-    puntuacion = models.IntegerField()
+    latitud = models.TextField()
+    longitud =  models.TextField()
+    puntuacion = models.TextField()
     """
     regla = models.ManyToManyField(Regla,null=True, help_text="Seleccione una regla para este Lugar")
     """

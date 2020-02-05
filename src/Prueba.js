@@ -23,6 +23,7 @@ class BodyPRUEBA extends Component{
             <div>
                 PRUEBA 
                 <ul>
+                	{}
 			        {this.state.logs.map(log => 
 			          <li key={log.id}>{log.user} {log.accion} {log.detalle} {log.fecha}</li>
 			        )}
