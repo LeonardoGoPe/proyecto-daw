@@ -47,7 +47,7 @@ toggleCollapse = () => {
               <MDBNavLink to={'/noticias'}>Noticias</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-                    <MDBNavLink to={'/prueba'}>Prueba</MDBNavLink>
+                    <MDBNavLink to={'/Stats'}>Prueba</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
                     <MDBNavLink to={'/LogIn'}>Iniciar Sesión</MDBNavLink>
