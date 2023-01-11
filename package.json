@@ -15,7 +15,7 @@
     "express": "^4.17.1",
     "font-family": "^0.2.0",
     "fonts": "0.0.2",
-    "knex": "^0.20.8",
+    "knex": "^2.4.0",
     "leaflet": "^1.6.0",
     "leaflet.awesome-markers": "^2.0.5",
     "leaflet.locatecontrol": "^0.68.0",
